@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-mI-GkJ" customClass="SAButton">
+                                <rect key="frame" x="46" y="617" width="283" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dtE-xG-t2a"/>
+                                </constraints>
+                                <state key="normal" title="LOGIN"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0AV-4D-ify" customClass="SATextField">
+                                <rect key="frame" x="46" y="537" width="283" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oq8-Hf-Oik"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N3x-PI-fKX" customClass="SATextField">
+                                <rect key="frame" x="46" y="477" width="283" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WS4-cC-1fw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave-logo" translatesAutoresizingMaskIntoConstraints="NO" id="HHm-np-IV4">
+                                <rect key="frame" x="82.5" y="103.5" width="210" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="CqL-pI-RbH"/>
+                                    <constraint firstAttribute="width" constant="210" id="cvh-78-z7Y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WaveFinder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="RUz-le-DDw">
+                                <rect key="frame" x="36" y="354" width="303" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Ncd-8B-RmA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HHm-np-IV4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-125" id="1Yg-6I-ZDw"/>
+                            <constraint firstItem="N3x-PI-fKX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="6Ny-IA-Nwn"/>
+                            <constraint firstItem="0AV-4D-ify" firstAttribute="top" secondItem="N3x-PI-fKX" secondAttribute="bottom" constant="20" id="Ai2-tX-dVk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0AV-4D-ify" secondAttribute="trailing" constant="30" id="CyZ-J0-Dru"/>
+                            <constraint firstItem="RUz-le-DDw" firstAttribute="top" secondItem="HHm-np-IV4" secondAttribute="bottom" constant="40.5" id="F4H-RN-hwF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iNv-mI-GkJ" secondAttribute="trailing" constant="30" id="Ff6-ad-gbX"/>
+                            <constraint firstItem="0AV-4D-ify" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="HuE-0a-75S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N3x-PI-fKX" secondAttribute="trailing" constant="30" id="JbJ-Mb-X8w"/>
+                            <constraint firstItem="iNv-mI-GkJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="K2s-b4-TaL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RUz-le-DDw" secondAttribute="trailing" constant="20" id="Pgx-l2-Ued"/>
+                            <constraint firstItem="RUz-le-DDw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="avK-DU-V5O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iNv-mI-GkJ" secondAttribute="bottom" constant="20" id="bNi-rQ-1wY"/>
+                            <constraint firstItem="HHm-np-IV4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h45-P2-z5h"/>
+                            <constraint firstItem="iNv-mI-GkJ" firstAttribute="top" secondItem="0AV-4D-ify" secondAttribute="bottom" constant="40" id="ogi-H5-zWi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wave-logo" width="1019" height="1024"/>
+    </resources>
+</document>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pEg-8h-cT8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lPq-iz-0Bp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NMU-KW-SVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="pEg-8h-cT8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bAf-bo-3Ef">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third tab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="50i-td-sqg">
+                                <rect key="frame" x="132" y="316" width="111" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96067041158676147" green="0.64095002412796021" blue="0.19332525134086609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="50i-td-sqg" firstAttribute="centerX" secondItem="bAf-bo-3Ef" secondAttribute="centerX" id="3kh-OT-nbZ"/>
+                            <constraint firstItem="50i-td-sqg" firstAttribute="centerY" secondItem="bAf-bo-3Ef" secondAttribute="centerY" id="dge-wP-bXJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iB5-Go-PtX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="MAR-Nv-W5Z"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="438.53073463268368"/>
+        </scene>
+    </scenes>
+</document>

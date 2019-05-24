@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Beginner_Constraints" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9B-rB-fgw" customClass="SAButton" customModule="Beginner_Constraints" customModuleProvider="target">
+                                <rect key="frame" x="30" y="708" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="n96-EG-rb8"/>
+                                </constraints>
+                                <state key="normal" title="LOGIN"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j1F-Li-lge" customClass="SATextField" customModule="Beginner_Constraints" customModuleProvider="target">
+                                <rect key="frame" x="30" y="618" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cnM-ld-B6h"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgd-le-aNO" customClass="SATextField" customModule="Beginner_Constraints" customModuleProvider="target">
+                                <rect key="frame" x="30" y="558" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pjv-Za-Phh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Asg-ha-NLa">
+                                <rect key="frame" x="92.666666666666686" y="151" width="190" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="bQJ-xl-6Dw"/>
+                                    <constraint firstAttribute="height" constant="190" id="k5u-Wu-3UV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WaveFinder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="hvB-3G-oHD">
+                                <rect key="frame" x="20" y="356" width="335" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="S1K-LP-1G2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S9B-rB-fgw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="75o-j9-8UP"/>
+                            <constraint firstAttribute="trailing" secondItem="j1F-Li-lge" secondAttribute="trailing" constant="30" id="7dD-i2-aS4"/>
+                            <constraint firstItem="j1F-Li-lge" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Moc-XZ-Kx4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S9B-rB-fgw" secondAttribute="bottom" constant="20" id="P5K-H2-QKw"/>
+                            <constraint firstItem="qgd-le-aNO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="V3A-um-B1E"/>
+                            <constraint firstItem="Asg-ha-NLa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-160" id="YiB-Jc-5Fh"/>
+                            <constraint firstItem="hvB-3G-oHD" firstAttribute="top" secondItem="Asg-ha-NLa" secondAttribute="bottom" constant="15" id="eiL-Wh-QUU"/>
+                            <constraint firstItem="S9B-rB-fgw" firstAttribute="top" secondItem="j1F-Li-lge" secondAttribute="bottom" constant="40" id="hMi-Fv-nRA"/>
+                            <constraint firstAttribute="trailing" secondItem="hvB-3G-oHD" secondAttribute="trailing" constant="20" id="qkR-Zx-Znf"/>
+                            <constraint firstItem="j1F-Li-lge" firstAttribute="top" secondItem="qgd-le-aNO" secondAttribute="bottom" constant="10" id="s4G-p5-g46"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qgd-le-aNO" secondAttribute="trailing" constant="30" id="tio-Pz-k1m"/>
+                            <constraint firstItem="hvB-3G-oHD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="uWN-el-6DO"/>
+                            <constraint firstAttribute="trailing" secondItem="S9B-rB-fgw" secondAttribute="trailing" constant="30" id="wCd-oH-U6B"/>
+                            <constraint firstItem="Asg-ha-NLa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zj4-vG-LYO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wave-logo" width="1019" height="1024"/>
+    </resources>
+</document>
